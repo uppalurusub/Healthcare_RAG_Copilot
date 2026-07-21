@@ -1,0 +1,187 @@
+2026-07-14 14:54:50 | INFO | config.llm_config:<module>:18 | Using OpenRouter Model: meta-llama/llama-3.3-70b-instruct
+2026-07-14 14:55:06 | INFO | services.rag_service:__init__:30 | Initializing Healthcare RAG Service
+2026-07-14 14:55:06 | INFO | implementation.rag_impl:__init__:22 | Initializing Healthcare RAG Implementation
+2026-07-14 14:55:06 | INFO | memory.vector_store:__init__:21 | Initializing ChromaDB Collection: healthcare_knowledge_base
+2026-07-14 14:55:13 | SUCCESS | memory.vector_store:__init__:35 | Vector Store Initialized Successfully
+2026-07-14 14:55:13 | INFO | agents.rag_agents:__init__:16 | Initializing Healthcare RAG Agents...
+2026-07-14 14:55:13 | INFO | agents.rag_agents:__init__:22 | LLM Client Initialized: meta-llama/llama-3.3-70b-instruct
+2026-07-14 14:55:13 | SUCCESS | agents.rag_agents:__init__:41 | RetrievalAgent Initialized
+2026-07-14 14:55:13 | SUCCESS | agents.rag_agents:__init__:61 | MedicalKnowledgeAgent Initialized
+2026-07-14 14:55:13 | SUCCESS | agents.rag_agents:__init__:81 | ValidationAgent Initialized
+2026-07-14 14:55:13 | SUCCESS | agents.rag_agents:__init__:85 | All Healthcare RAG Agents Initialized Successfully
+2026-07-14 14:55:13 | SUCCESS | implementation.rag_impl:__init__:30 | Healthcare RAG Implementation Initialized
+2026-07-14 14:55:13 | SUCCESS | services.rag_service:__init__:36 | Healthcare RAG Service Initialized
+2026-07-14 14:55:53 | INFO | config.llm_config:<module>:18 | Using OpenRouter Model: meta-llama/llama-3.3-70b-instruct
+2026-07-14 14:55:56 | INFO | services.rag_service:__init__:30 | Initializing Healthcare RAG Service
+2026-07-14 14:55:56 | INFO | implementation.rag_impl:__init__:22 | Initializing Healthcare RAG Implementation
+2026-07-14 14:55:56 | INFO | memory.vector_store:__init__:21 | Initializing ChromaDB Collection: healthcare_knowledge_base
+2026-07-14 14:56:03 | SUCCESS | memory.vector_store:__init__:35 | Vector Store Initialized Successfully
+2026-07-14 14:56:03 | INFO | agents.rag_agents:__init__:16 | Initializing Healthcare RAG Agents...
+2026-07-14 14:56:03 | INFO | agents.rag_agents:__init__:22 | LLM Client Initialized: meta-llama/llama-3.3-70b-instruct
+2026-07-14 14:56:03 | SUCCESS | agents.rag_agents:__init__:41 | RetrievalAgent Initialized
+2026-07-14 14:56:03 | SUCCESS | agents.rag_agents:__init__:61 | MedicalKnowledgeAgent Initialized
+2026-07-14 14:56:03 | SUCCESS | agents.rag_agents:__init__:81 | ValidationAgent Initialized
+2026-07-14 14:56:03 | SUCCESS | agents.rag_agents:__init__:85 | All Healthcare RAG Agents Initialized Successfully
+2026-07-14 14:56:03 | SUCCESS | implementation.rag_impl:__init__:30 | Healthcare RAG Implementation Initialized
+2026-07-14 14:56:03 | SUCCESS | services.rag_service:__init__:36 | Healthcare RAG Service Initialized
+2026-07-14 14:56:31 | INFO | config.llm_config:<module>:18 | Using OpenRouter Model: meta-llama/llama-3.3-70b-instruct
+2026-07-14 14:56:34 | INFO | services.rag_service:__init__:30 | Initializing Healthcare RAG Service
+2026-07-14 14:56:34 | INFO | implementation.rag_impl:__init__:22 | Initializing Healthcare RAG Implementation
+2026-07-14 14:56:34 | INFO | memory.vector_store:__init__:21 | Initializing ChromaDB Collection: healthcare_knowledge_base
+2026-07-14 14:56:41 | SUCCESS | memory.vector_store:__init__:35 | Vector Store Initialized Successfully
+2026-07-14 14:56:41 | INFO | agents.rag_agents:__init__:16 | Initializing Healthcare RAG Agents...
+2026-07-14 14:56:42 | INFO | agents.rag_agents:__init__:22 | LLM Client Initialized: meta-llama/llama-3.3-70b-instruct
+2026-07-14 14:56:42 | SUCCESS | agents.rag_agents:__init__:41 | RetrievalAgent Initialized
+2026-07-14 14:56:42 | SUCCESS | agents.rag_agents:__init__:61 | MedicalKnowledgeAgent Initialized
+2026-07-14 14:56:42 | SUCCESS | agents.rag_agents:__init__:81 | ValidationAgent Initialized
+2026-07-14 14:56:42 | SUCCESS | agents.rag_agents:__init__:85 | All Healthcare RAG Agents Initialized Successfully
+2026-07-14 14:56:42 | SUCCESS | implementation.rag_impl:__init__:30 | Healthcare RAG Implementation Initialized
+2026-07-14 14:56:42 | SUCCESS | services.rag_service:__init__:36 | Healthcare RAG Service Initialized
+2026-07-14 14:56:56 | INFO | config.llm_config:<module>:18 | Using OpenRouter Model: meta-llama/llama-3.3-70b-instruct
+2026-07-14 14:57:00 | INFO | services.rag_service:__init__:30 | Initializing Healthcare RAG Service
+2026-07-14 14:57:00 | INFO | implementation.rag_impl:__init__:22 | Initializing Healthcare RAG Implementation
+2026-07-14 14:57:00 | INFO | memory.vector_store:__init__:21 | Initializing ChromaDB Collection: healthcare_knowledge_base
+2026-07-14 14:57:06 | SUCCESS | memory.vector_store:__init__:35 | Vector Store Initialized Successfully
+2026-07-14 14:57:06 | INFO | agents.rag_agents:__init__:16 | Initializing Healthcare RAG Agents...
+2026-07-14 14:57:06 | INFO | agents.rag_agents:__init__:22 | LLM Client Initialized: meta-llama/llama-3.3-70b-instruct
+2026-07-14 14:57:06 | SUCCESS | agents.rag_agents:__init__:41 | RetrievalAgent Initialized
+2026-07-14 14:57:06 | SUCCESS | agents.rag_agents:__init__:61 | MedicalKnowledgeAgent Initialized
+2026-07-14 14:57:06 | SUCCESS | agents.rag_agents:__init__:81 | ValidationAgent Initialized
+2026-07-14 14:57:06 | SUCCESS | agents.rag_agents:__init__:85 | All Healthcare RAG Agents Initialized Successfully
+2026-07-14 14:57:06 | SUCCESS | implementation.rag_impl:__init__:30 | Healthcare RAG Implementation Initialized
+2026-07-14 14:57:06 | SUCCESS | services.rag_service:__init__:36 | Healthcare RAG Service Initialized
+2026-07-14 14:59:46 | INFO | config.llm_config:<module>:18 | Using OpenRouter Model: meta-llama/llama-3.3-70b-instruct
+2026-07-14 14:59:50 | INFO | services.rag_service:__init__:30 | Initializing Healthcare RAG Service
+2026-07-14 14:59:50 | INFO | implementation.rag_impl:__init__:22 | Initializing Healthcare RAG Implementation
+2026-07-14 14:59:50 | INFO | memory.vector_store:__init__:21 | Initializing ChromaDB Collection: healthcare_knowledge_base
+2026-07-14 14:59:56 | SUCCESS | memory.vector_store:__init__:35 | Vector Store Initialized Successfully
+2026-07-14 14:59:56 | INFO | agents.rag_agents:__init__:16 | Initializing Healthcare RAG Agents...
+2026-07-14 14:59:56 | INFO | agents.rag_agents:__init__:22 | LLM Client Initialized: meta-llama/llama-3.3-70b-instruct
+2026-07-14 14:59:56 | SUCCESS | agents.rag_agents:__init__:41 | RetrievalAgent Initialized
+2026-07-14 14:59:56 | SUCCESS | agents.rag_agents:__init__:61 | MedicalKnowledgeAgent Initialized
+2026-07-14 14:59:56 | SUCCESS | agents.rag_agents:__init__:81 | ValidationAgent Initialized
+2026-07-14 14:59:56 | SUCCESS | agents.rag_agents:__init__:85 | All Healthcare RAG Agents Initialized Successfully
+2026-07-14 14:59:56 | SUCCESS | implementation.rag_impl:__init__:30 | Healthcare RAG Implementation Initialized
+2026-07-14 14:59:56 | SUCCESS | services.rag_service:__init__:36 | Healthcare RAG Service Initialized
+2026-07-14 15:07:16 | INFO | __main__:main:12 | Starting Document Ingestion
+2026-07-14 15:07:16 | INFO | memory.vector_store:__init__:21 | Initializing ChromaDB Collection: healthcare_knowledge_base
+2026-07-14 15:07:22 | SUCCESS | memory.vector_store:__init__:35 | Vector Store Initialized Successfully
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:143 | Loading documents from knowledge_base
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:156 | Found 30 PDFs
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:162 | Processing asthma_management_guideline.pdf
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:189 | Created 1 chunks
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:162 | Processing chronic_kidney_disease_guideline.pdf
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:189 | Created 1 chunks
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:162 | Processing copd_guideline.pdf
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:189 | Created 1 chunks
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:162 | Processing depression_management_guideline.pdf
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:189 | Created 1 chunks
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:162 | Processing diabetes_management_guideline.pdf
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:189 | Created 1 chunks
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:162 | Processing heart_failure_guideline.pdf
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:189 | Created 1 chunks
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:162 | Processing hypertension_guideline.pdf
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:189 | Created 1 chunks
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:162 | Processing obesity_management_guideline.pdf
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:189 | Created 1 chunks
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:162 | Processing sepsis_management_guideline.pdf
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:189 | Created 1 chunks
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:162 | Processing stroke_management_guideline.pdf
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:189 | Created 1 chunks
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:162 | Processing cardiology_protocol.pdf
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:189 | Created 1 chunks
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:162 | Processing covid_treatment_protocol.pdf
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:189 | Created 1 chunks
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:162 | Processing diabetes_clinical_protocol.pdf
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:189 | Created 1 chunks
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:162 | Processing hypertension_protocol.pdf
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:189 | Created 1 chunks
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:162 | Processing icu_management_protocol.pdf
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:189 | Created 1 chunks
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:162 | Processing oncology_trial_protocol.pdf
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:189 | Created 1 chunks
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:162 | Processing sepsis_protocol.pdf
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:189 | Created 1 chunks
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:162 | Processing surgery_postop_protocol.pdf
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:189 | Created 1 chunks
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:162 | Processing surgery_preop_protocol.pdf
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:189 | Created 1 chunks
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:162 | Processing vaccine_protocol.pdf
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:189 | Created 1 chunks
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:162 | Processing adverse_event_reporting_sop.pdf
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:189 | Created 1 chunks
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:162 | Processing clinical_documentation_sop.pdf
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:189 | Created 1 chunks
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:162 | Processing discharge_process_sop.pdf
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:189 | Created 1 chunks
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:162 | Processing emergency_response_sop.pdf
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:189 | Created 1 chunks
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:162 | Processing infection_control_sop.pdf
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:189 | Created 1 chunks
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:162 | Processing laboratory_sample_handling_sop.pdf
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:189 | Created 1 chunks
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:162 | Processing medication_administration_sop.pdf
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:189 | Created 1 chunks
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:162 | Processing patient_admission_sop.pdf
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:189 | Created 1 chunks
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:162 | Processing patient_consent_sop.pdf
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:189 | Created 1 chunks
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:162 | Processing telemedicine_sop.pdf
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:189 | Created 1 chunks
+2026-07-14 15:07:22 | INFO | utils.document_loader:load_documents:222 | Total chunks created: 30
+2026-07-14 15:07:22 | INFO | memory.vector_store:add_documents:66 | Adding 30 documents
+2026-07-14 15:07:23 | SUCCESS | memory.vector_store:add_documents:112 | 30 documents added
+2026-07-14 15:07:23 | SUCCESS | utils.document_loader:load_documents:233 | Knowledge Base Loaded Successfully
+2026-07-14 15:07:23 | SUCCESS | __main__:main:22 | {'success': True, 'documents_added': 30, 'time_seconds': 0.34}
+2026-07-14 15:09:51 | INFO | config.llm_config:<module>:18 | Using OpenRouter Model: meta-llama/llama-3.3-70b-instruct
+2026-07-14 15:09:55 | INFO | services.rag_service:__init__:30 | Initializing Healthcare RAG Service
+2026-07-14 15:09:55 | INFO | implementation.rag_impl:__init__:22 | Initializing Healthcare RAG Implementation
+2026-07-14 15:09:55 | INFO | memory.vector_store:__init__:21 | Initializing ChromaDB Collection: healthcare_knowledge_base
+2026-07-14 15:10:01 | SUCCESS | memory.vector_store:__init__:35 | Vector Store Initialized Successfully
+2026-07-14 15:10:01 | INFO | agents.rag_agents:__init__:16 | Initializing Healthcare RAG Agents...
+2026-07-14 15:10:01 | INFO | agents.rag_agents:__init__:22 | LLM Client Initialized: meta-llama/llama-3.3-70b-instruct
+2026-07-14 15:10:01 | SUCCESS | agents.rag_agents:__init__:41 | RetrievalAgent Initialized
+2026-07-14 15:10:01 | SUCCESS | agents.rag_agents:__init__:61 | MedicalKnowledgeAgent Initialized
+2026-07-14 15:10:01 | SUCCESS | agents.rag_agents:__init__:81 | ValidationAgent Initialized
+2026-07-14 15:10:01 | SUCCESS | agents.rag_agents:__init__:85 | All Healthcare RAG Agents Initialized Successfully
+2026-07-14 15:10:01 | SUCCESS | implementation.rag_impl:__init__:30 | Healthcare RAG Implementation Initialized
+2026-07-14 15:10:01 | SUCCESS | services.rag_service:__init__:36 | Healthcare RAG Service Initialized
+2026-07-14 15:10:12 | INFO | config.llm_config:<module>:18 | Using OpenRouter Model: meta-llama/llama-3.3-70b-instruct
+2026-07-14 15:10:16 | INFO | services.rag_service:__init__:30 | Initializing Healthcare RAG Service
+2026-07-14 15:10:16 | INFO | implementation.rag_impl:__init__:22 | Initializing Healthcare RAG Implementation
+2026-07-14 15:10:16 | INFO | memory.vector_store:__init__:21 | Initializing ChromaDB Collection: healthcare_knowledge_base
+2026-07-14 15:10:22 | SUCCESS | memory.vector_store:__init__:35 | Vector Store Initialized Successfully
+2026-07-14 15:10:22 | INFO | agents.rag_agents:__init__:16 | Initializing Healthcare RAG Agents...
+2026-07-14 15:10:22 | INFO | agents.rag_agents:__init__:22 | LLM Client Initialized: meta-llama/llama-3.3-70b-instruct
+2026-07-14 15:10:22 | SUCCESS | agents.rag_agents:__init__:41 | RetrievalAgent Initialized
+2026-07-14 15:10:22 | SUCCESS | agents.rag_agents:__init__:61 | MedicalKnowledgeAgent Initialized
+2026-07-14 15:10:22 | SUCCESS | agents.rag_agents:__init__:81 | ValidationAgent Initialized
+2026-07-14 15:10:22 | SUCCESS | agents.rag_agents:__init__:85 | All Healthcare RAG Agents Initialized Successfully
+2026-07-14 15:10:22 | SUCCESS | implementation.rag_impl:__init__:30 | Healthcare RAG Implementation Initialized
+2026-07-14 15:10:22 | SUCCESS | services.rag_service:__init__:36 | Healthcare RAG Service Initialized
+2026-07-21 17:47:40 | INFO | config.llm_config:<module>:18 | Using OpenRouter Model: meta-llama/llama-3.3-70b-instruct
+2026-07-21 17:47:43 | INFO | services.rag_service:__init__:30 | Initializing Healthcare RAG Service
+2026-07-21 17:47:43 | INFO | implementation.rag_impl:__init__:22 | Initializing Healthcare RAG Implementation
+2026-07-21 17:47:43 | INFO | memory.vector_store:__init__:21 | Initializing ChromaDB Collection: healthcare_knowledge_base
+2026-07-21 17:47:49 | SUCCESS | memory.vector_store:__init__:35 | Vector Store Initialized Successfully
+2026-07-21 17:47:49 | INFO | agents.rag_agents:__init__:16 | Initializing Healthcare RAG Agents...
+2026-07-21 17:47:50 | INFO | agents.rag_agents:__init__:22 | LLM Client Initialized: meta-llama/llama-3.3-70b-instruct
+2026-07-21 17:47:50 | SUCCESS | agents.rag_agents:__init__:41 | RetrievalAgent Initialized
+2026-07-21 17:47:50 | SUCCESS | agents.rag_agents:__init__:61 | MedicalKnowledgeAgent Initialized
+2026-07-21 17:47:50 | SUCCESS | agents.rag_agents:__init__:81 | ValidationAgent Initialized
+2026-07-21 17:47:50 | SUCCESS | agents.rag_agents:__init__:85 | All Healthcare RAG Agents Initialized Successfully
+2026-07-21 17:47:50 | SUCCESS | implementation.rag_impl:__init__:30 | Healthcare RAG Implementation Initialized
+2026-07-21 17:47:50 | SUCCESS | services.rag_service:__init__:36 | Healthcare RAG Service Initialized
+2026-07-21 17:47:57 | INFO | config.llm_config:<module>:18 | Using OpenRouter Model: meta-llama/llama-3.3-70b-instruct
+2026-07-21 17:48:00 | INFO | services.rag_service:__init__:30 | Initializing Healthcare RAG Service
+2026-07-21 17:48:00 | INFO | implementation.rag_impl:__init__:22 | Initializing Healthcare RAG Implementation
+2026-07-21 17:48:00 | INFO | memory.vector_store:__init__:21 | Initializing ChromaDB Collection: healthcare_knowledge_base
+2026-07-21 17:48:06 | SUCCESS | memory.vector_store:__init__:35 | Vector Store Initialized Successfully
+2026-07-21 17:48:06 | INFO | agents.rag_agents:__init__:16 | Initializing Healthcare RAG Agents...
+2026-07-21 17:48:06 | INFO | agents.rag_agents:__init__:22 | LLM Client Initialized: meta-llama/llama-3.3-70b-instruct
+2026-07-21 17:48:06 | SUCCESS | agents.rag_agents:__init__:41 | RetrievalAgent Initialized
+2026-07-21 17:48:06 | SUCCESS | agents.rag_agents:__init__:61 | MedicalKnowledgeAgent Initialized
+2026-07-21 17:48:06 | SUCCESS | agents.rag_agents:__init__:81 | ValidationAgent Initialized
+2026-07-21 17:48:06 | SUCCESS | agents.rag_agents:__init__:85 | All Healthcare RAG Agents Initialized Successfully
+2026-07-21 17:48:06 | SUCCESS | implementation.rag_impl:__init__:30 | Healthcare RAG Implementation Initialized
+2026-07-21 17:48:06 | SUCCESS | services.rag_service:__init__:36 | Healthcare RAG Service Initialized

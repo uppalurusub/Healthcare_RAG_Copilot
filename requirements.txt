@@ -1,0 +1,15 @@
+ipykernel
+uv
+fastapi
+streamlit
+python-dotenv
+uvicorn
+autogen==0.7.5
+autogen-agentchat==0.7.5
+autogen-ext==0.7.5
+openai
+loguru
+mlflow
+chromadb
+sentence-transformers
+pypdf
