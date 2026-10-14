@@ -1,6 +1,7 @@
 import { RAG_ASK_ENDPOINT } from "../config/api";
 import type { RAGRequest, RAGResponse } from "../types/rag";
 
+
 export async function askRagQuestion(payload: RAGRequest): Promise<RAGResponse> {
   let response: Response;
   try {
