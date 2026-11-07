@@ -1,16 +1,19 @@
 from typing import List, Dict, Any
 from chromadb import PersistentClient
 from sentence_transformers import SentenceTransformer
-from utils.logger import logger
+from app.config.settings import settings
+logger = settings.get_logger()
+
 import uuid
 import time
-
-
+from pathlib import Path
+backend_dir = Path(__file__).resolve().parents[3]
+chromadb_dir = backend_dir / "chroma_db"
 class VectorStore:
 
     def __init__(
         self,
-        db_path: str = "./chroma_db",
+        db_path: str = chromadb_dir,
         collection_name: str = "healthcare_knowledge_base"
     ):
         """

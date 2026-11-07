@@ -1,11 +1,10 @@
 from typing import Dict, Any
-from utils.logger import logger
+
 
 from autogen_agentchat.agents import AssistantAgent
-from autogen_ext.models.openai import OpenAIChatCompletionClient
 
-from config.llm_config import get_model_client,model
-
+from app.config.settings import settings
+logger = settings.get_logger()
 
 class RAGAgents:
 
@@ -17,10 +16,10 @@ class RAGAgents:
                 "Initializing Healthcare RAG Agents..."
             )
 
-            self.model_client = get_model_client()
+            self.model_client = settings.get_model_client()
 
             logger.info(
-                f"LLM Client Initialized: {model}"
+                f"LLM Client Initialized: {settings.model}"
             )
 
             self.retrieval_agent = AssistantAgent(

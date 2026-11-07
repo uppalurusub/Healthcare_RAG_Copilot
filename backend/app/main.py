@@ -4,9 +4,10 @@ import sys
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from utils.logger import logger
+from app.config.settings import settings
+logger = settings.get_logger()
 
-from routers.rag_router import router as rag_router
+from app.routers.rag_router import router as rag_router
 
 
 # =====================================================

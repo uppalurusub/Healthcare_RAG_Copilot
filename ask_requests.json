@@ -1,0 +1,205 @@
+1. Diabetes Guideline Query
+{
+  "question": "What are the first-line treatment recommendations for Type 2 Diabetes?",
+  "top_k": 5,
+  "document_types": [
+    "guideline"
+  ],
+  "departments": [
+    "endocrinology"
+  ],
+  "document_names": [
+    "diabetes_management_guideline.pdf"
+  ],
+  "include_sources": true,
+  "conversation_history": []
+}
+2. Hypertension Guideline Query
+{
+  "question": "What blood pressure targets are recommended for adults with hypertension?",
+  "top_k": 5,
+  "document_types": [
+    "guideline"
+  ],
+  "departments": [
+    "cardiology"
+  ],
+  "document_names": [
+    "hypertension_guideline.pdf"
+  ],
+  "include_sources": true,
+  "conversation_history": []
+}
+3. SOP Query
+{
+  "question": "What is the process for reporting an adverse event?",
+  "top_k": 3,
+  "document_types": [
+    "sop"
+  ],
+  "departments": [
+    "clinical_operations"
+  ],
+  "document_names": [
+    "adverse_event_reporting_sop.pdf"
+  ],
+  "include_sources": true,
+  "conversation_history": []
+}
+4. Clinical Trial Protocol Query
+{
+  "question": "What are the inclusion and exclusion criteria for the oncology clinical trial?",
+  "top_k": 5,
+  "document_types": [
+    "protocol"
+  ],
+  "departments": [
+    "oncology"
+  ],
+  "document_names": [
+    "oncology_trial_protocol.pdf"
+  ],
+  "include_sources": true,
+  "conversation_history": []
+}
+5. Sepsis Management Query
+{
+  "question": "What monitoring and treatment recommendations are available for sepsis patients?",
+  "top_k": 5,
+  "document_types": [
+    "guideline",
+    "protocol"
+  ],
+  "departments": [
+    "critical_care"
+  ],
+  "document_names": [
+    "sepsis_management_guideline.pdf",
+    "sepsis_protocol.pdf"
+  ],
+  "include_sources": true,
+  "conversation_history": []
+}
+6. Multi-Document Search
+{
+  "question": "Compare diabetes and hypertension management recommendations.",
+  "top_k": 10,
+  "document_types": [
+    "guideline"
+  ],
+  "departments": [
+    "endocrinology",
+    "cardiology"
+  ],
+  "document_names": [
+    "diabetes_management_guideline.pdf",
+    "hypertension_guideline.pdf"
+  ],
+  "include_sources": true,
+  "conversation_history": []
+}
+7. Conversational Follow-Up Query
+Previous Conversation
+[
+  {
+    "role": "user",
+    "content": "Tell me about diabetes management."
+  },
+  {
+    "role": "assistant",
+    "content": "Lifestyle modifications and Metformin are first-line therapies."
+  }
+]
+Follow-Up Request
+{
+  "question": "What should be done if Metformin alone is insufficient?",
+  "top_k": 5,
+  "document_types": [
+    "guideline"
+  ],
+  "departments": [
+    "endocrinology"
+  ],
+  "document_names": [
+    "diabetes_management_guideline.pdf"
+  ],
+  "include_sources": true,
+  "conversation_history": [
+    {
+      "role": "user",
+      "content": "Tell me about diabetes management."
+    },
+    {
+      "role": "assistant",
+      "content": "Lifestyle modifications and Metformin are first-line therapies."
+    }
+  ]
+}
+8. Nurse-Focused Medication SOP Query
+{
+  "question": "What are the required medication administration checks before giving medication?",
+  "top_k": 5,
+  "document_types": [
+    "sop"
+  ],
+  "departments": [
+    "nursing"
+  ],
+  "document_names": [
+    "medication_administration_sop.pdf"
+  ],
+  "include_sources": true,
+  "conversation_history": []
+}
+9. ICU Protocol Query
+{
+  "question": "What are the ICU admission and monitoring procedures?",
+  "top_k": 5,
+  "document_types": [
+    "protocol"
+  ],
+  "departments": [
+    "critical_care"
+  ],
+  "document_names": [
+    "icu_management_protocol.pdf"
+  ],
+  "include_sources": true,
+  "conversation_history": []
+}
+10. Enterprise RAG Query Across All Documents
+{
+  "question": "Summarize all available guidance for managing Type 2 Diabetes including SOPs, protocols, and guidelines.",
+  "top_k": 15,
+  "document_types": [
+    "guideline",
+    "sop",
+    "protocol"
+  ],
+  "departments": [
+    "endocrinology"
+  ],
+  "document_names": [],
+  "include_sources": true,
+  "conversation_history": []
+}
+Swagger Test Request
+{
+  "question": "What are the first-line treatment recommendations for Type 2 Diabetes?",
+  "top_k": 5,
+  "document_types": [
+    "guideline"
+  ],
+  "departments": [
+    "endocrinology"
+  ],
+  "document_names": [
+    "diabetes_management_guideline.pdf"
+  ],
+  "include_sources": true,
+  "conversation_history": []
+}
+
+This is the best request to test the complete AutoGen workflow:
+
+Vector Store → Retrieval Agent → Medical Knowledge Agent → Validation Agent → Final Response.

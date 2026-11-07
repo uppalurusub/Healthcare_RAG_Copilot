@@ -1,12 +1,13 @@
 import time
 from typing import List
 
-from utils.logger import logger
+from app.config.settings import settings
+logger = settings.get_logger()
 
-from memory.vector_store import VectorStore
-from agents.rag_agents import RAGAgents
+from app.memory.vector_store import VectorStore
+from app.agents.rag_agents import RAGAgents
 
-from models.response_model import (
+from app.schemas.response_model import (
     RAGResponse,
     SourceDocument,
     AgentResponse,

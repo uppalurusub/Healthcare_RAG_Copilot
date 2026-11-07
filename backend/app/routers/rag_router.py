@@ -1,13 +1,14 @@
 from fastapi import APIRouter, HTTPException
-from utils.logger import logger
+from app.config.settings import settings
+logger = settings.get_logger()
 
-from services.rag_service import RAGService
+from app.services.rag_service import RAGService
 
-from models.request_model import (
+from app.schemas.request_model import (
     RAGRequest
 )
 
-from models.response_model import (
+from app.schemas.response_model import (
     RAGResponse
 )
 

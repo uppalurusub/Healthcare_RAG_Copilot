@@ -2,9 +2,10 @@ from pathlib import Path
 from typing import List, Dict
 
 from pypdf import PdfReader
-from utils.logger import logger
+from app.config.settings import settings
+logger = settings.get_logger()
 
-from memory.vector_store import VectorStore
+from app.memory.vector_store import VectorStore
 
 
 class DocumentLoader:

@@ -1,61 +1,124 @@
 # 🏥 Healthcare RAG Copilot
 
-An Enterprise AI-powered **Healthcare Retrieval-Augmented Generation (RAG) Copilot** built using **FastAPI**, **AutoGen Multi-Agent Framework**, **ChromaDB**, **React TypeScript**, and **Streamlit**.
+## Overview
 
-The system enables healthcare professionals to ask clinical questions and receive accurate, context-aware responses by retrieving information from medical guidelines, protocols, and SOP documents.
+Healthcare RAG Copilot is an Enterprise Retrieval-Augmented Generation (RAG) application designed to answer healthcare-related questions using trusted medical documents instead of relying solely on Large Language Models.
 
----
+The application combines:
 
-# 🚀 Features
+- AutoGen Multi-Agent Architecture
+- ChromaDB Vector Database
+- Retrieval-Augmented Generation (RAG)
+- FastAPI REST APIs
+- MLflow Tracking
+- Loguru Logging
 
-- 🤖 AutoGen 0.7.5 Multi-Agent Collaboration
-- 📚 Retrieval-Augmented Generation (RAG)
-- 🔍 Semantic Search using ChromaDB
-- 🩺 Clinical Guideline Retrieval
-- 📑 SOP Document Retrieval
-- 📋 Clinical Protocol Search
-- 🧠 LLM-powered Healthcare Assistant
-- ⚡ FastAPI REST API
-- 🎨 React TypeScript Frontend
-- 📈 Streamlit Dashboard
-- 📦 Modular Enterprise Architecture
-- 📝 Comprehensive Logging
-- 🔒 Production Ready API Design
+to provide evidence-based clinical responses with document citations and validation.
 
 ---
 
-# System Architecture
+# Features
+
+- Enterprise Healthcare Knowledge Assistant
+- Retrieval-Augmented Generation (RAG)
+- AutoGen 0.7.5 Multi-Agent Collaboration
+- Clinical Guideline Search
+- SOP Search
+- Hospital Protocol Search
+- Vector Similarity Search using ChromaDB
+- Evidence-Based Answers
+- Source Attribution
+- Clinical Validation Agent
+- Conversation History Support
+- MLflow Experiment Tracking
+- Structured Logging using Loguru
+- FastAPI REST API
+
+---
+
+# Architecture
 
 ```
-                    +----------------------+
-                    |   React Frontend     |
-                    +----------+-----------+
-                               |
-                               |
-                    REST API (FastAPI)
-                               |
-              +----------------+----------------+
-              |                                 |
-      RAG Service Layer                 Health APIs
-              |
-              |
-      AutoGen Multi-Agent System
-              |
-   +----------+-----------+
-   |                      |
-Retriever Agent     Validation Agent
-   |                      |
-   +----------+-----------+
-              |
-        ChromaDB Vector Store
-              |
-    Sentence Transformer Embeddings
-              |
-     PDF Knowledge Base
-       • Clinical Guidelines
-       • SOPs
-       • Protocols
+                    User Question
+                          │
+                          ▼
+                  FastAPI REST API
+                          │
+                          ▼
+                   Router Layer
+                          │
+                          ▼
+                  Service Layer
+                          │
+                          ▼
+              RAG Implementation Layer
+                          │
+        ┌─────────────────┼──────────────────┐
+        ▼                 ▼                  ▼
+ Vector Store      AutoGen Agents      MLflow Logging
+        │                 │
+        ▼                 ▼
+   ChromaDB        Multi-Agent Reasoning
+        │
+        ▼
+ Clinical Guidelines
+ SOP Documents
+ Protocol Documents
 ```
+
+---
+
+# AutoGen Multi-Agent Workflow
+
+The application uses three specialized AutoGen agents.
+
+## 1. Retrieval Agent
+
+Responsibilities
+
+- Analyze retrieved documents
+- Extract relevant information
+- Identify supporting evidence
+- Summarize retrieved content
+
+---
+
+## 2. Medical Knowledge Agent
+
+Responsibilities
+
+- Interpret clinical guidelines
+- Analyze SOPs
+- Analyze protocols
+- Generate evidence-based responses
+- Avoid hallucinations
+
+---
+
+## 3. Validation Agent
+
+Responsibilities
+
+- Validate medical facts
+- Verify protocol compliance
+- Detect unsupported claims
+- Assign confidence scores
+
+---
+
+# Technology Stack
+
+| Component | Technology |
+|------------|------------|
+| Backend | FastAPI |
+| Agent Framework | AutoGen 0.7.5 |
+| Vector Database | ChromaDB |
+| Embeddings | Sentence Transformers |
+| PDF Processing | PyPDF |
+| Experiment Tracking | MLflow |
+| Logging | Loguru |
+| Language Model | OpenAI Compatible API |
+| Validation | Pydantic |
 
 ---
 
@@ -63,90 +126,66 @@ Retriever Agent     Validation Agent
 
 ```
 Healthcare_RAG_Copilot/
+
 │
-├── backend/
-│   └── healthcare-rag-copilot-python-app/
-│       ├── agents/
-│       ├── config/
-│       ├── implementation/
-│       ├── knowledge_base/
-│       │     ├── clinical_guidelines/
-│       │     ├── protocols/
-│       │     └── sops/
-│       ├── chroma_db/
-│       ├── models/
-│       ├── routers/
-│       ├── services/
-│       ├── utils/
-│       ├── main.py
-│       └── logs/
+├── app/
+│   ├── agents/
+│   │      rag_agents.py
+│   │
+│   ├── config/
+│   │      llm_config.py
+│   │      llm_models_config.py
+│   │
+│   ├── implementation/
+│   │      rag_impl.py
+│   │
+│   ├── memory/
+│   │      vector_store.py
+│   │
+│   ├── models/
+│   │      request_model.py
+│   │      response_model.py
+│   │
+│   ├── routers/
+│   │      rag_router.py
+│   │
+│   ├── services/
+│   │      rag_service.py
+│   │
+│   ├── utils/
+│   │      document_loader.py
+│   │      ingest_documents.py
+│   │      prompt_templates.py
+│   │      logger.py
+│   │
+│   └── main.py
 │
-├── ui/
-│   ├── reactjs/
-│   │      └── healthcare-rag-copilot-reactjs-app/
-│   └── streamlit/
-│          └── healthcare-rag-copilot-streamlit-app/
+├── chroma_db/
+│
+├── knowledge_base/
+│      clinical_guidelines/
+│      protocols/
+│      sop/
+│
+├── logs/
 │
 ├── requirements.txt
-└── README.md
+└── ask_requests.json
 ```
 
 ---
 
-# Technology Stack
+# Knowledge Base
 
-## Backend
-
-- Python
-- FastAPI
-- AutoGen 0.7.5
-- ChromaDB
-- Sentence Transformers
-- OpenAI
-- Uvicorn
-- Loguru
-- MLflow
-- PyPDF
-
----
-
-## Frontend
-
-- React 19
-- TypeScript
-- Vite
-- Axios
-- React Markdown
-- Lucide Icons
-
----
-
-## Vector Database
-
-- ChromaDB
-
----
-
-## AI Components
-
-- Retrieval-Augmented Generation (RAG)
-- Semantic Search
-- Vector Embeddings
-- Multi-Agent Collaboration
-
----
-
-# Knowledge Sources
-
-The project includes healthcare documents such as:
+The application indexes healthcare documents including:
 
 ## Clinical Guidelines
 
-- Diabetes Management
 - Hypertension
-- Heart Failure
+- Diabetes
 - COPD
 - Asthma
+- Heart Failure
 - Chronic Kidney Disease
 - Stroke
 - Sepsis
@@ -155,32 +194,27 @@ The project includes healthcare documents such as:
 
 ---
 
-## Clinical Protocols
+## Protocols
 
-- Cardiology
-- ICU Management
-- COVID Treatment
-- Oncology Trial
-- Diabetes Protocol
-- Surgery
-- Vaccination
+- Cardiology Protocol
+- COVID Treatment Protocol
+- Diabetes Clinical Protocol
+- and more...
 
 ---
 
 ## SOP Documents
 
-- Clinical Documentation
-- Adverse Event Reporting
-- Additional Healthcare SOPs
+Healthcare operational procedures.
 
 ---
 
-# Backend Installation
+# Installation
 
 ## Clone Repository
 
 ```bash
-git clone https://github.com/your-org/Healthcare_RAG_Copilot.git
+git clone <repository-url>
 
 cd Healthcare_RAG_Copilot
 ```
@@ -199,7 +233,7 @@ Windows
 .venv\Scripts\activate
 ```
 
-Linux / Mac
+Linux
 
 ```bash
 source .venv/bin/activate
@@ -215,30 +249,33 @@ pip install -r requirements.txt
 
 ---
 
-## Environment Variables
+# Configure Environment
 
-Create a `.env` file inside the backend.
+Create a `.env`
 
-Example:
+Example
 
 ```env
-OPENAI_API_KEY=your_openai_key
-MODEL_NAME=gpt-4
-EMBEDDING_MODEL=sentence-transformers/all-MiniLM-L6-v2
-CHROMA_DB_PATH=./chroma_db
+OPENAI_API_KEY=your_api_key
+
+OPENAI_BASE_URL=https://your-provider.com/v1
+
+MODEL_NAME=gpt-4o-mini
 ```
 
 ---
 
-# Run Backend
+# Ingest Documents
+
+python -m app.utils.ingest_documents
+
+# Run Application
 
 ```bash
-cd backend/healthcare-rag-copilot-python-app
-
-uvicorn main:app --reload
+uvicorn app.main:app --reload
 ```
 
-Server
+Application
 
 ```
 http://localhost:8000
@@ -250,86 +287,90 @@ Swagger
 http://localhost:8000/docs
 ```
 
----
-
-# Frontend Installation
-
-Navigate to the React project.
-
-```bash
-cd ui/reactjs/healthcare-rag-copilot-reactjs-app
-```
-
-Install packages
-
-```bash
-npm install
-```
-
-Run
-
-```bash
-npm run dev
-```
-
-Application
+ReDoc
 
 ```
-http://localhost:5173
+http://localhost:8000/redoc
 ```
 
 ---
 
-# Streamlit Application
+# REST APIs
 
-Navigate to
+## Home
 
-```bash
-cd ui/streamlit/healthcare-rag-copilot-streamlit-app
 ```
-
-Install
-
-```bash
-pip install -r requirements.txt
-```
-
-Run
-
-```bash
-streamlit run app.py
+GET /
 ```
 
 ---
 
-# REST API
-
-## Ask Question
-
-**POST**
+## Readiness
 
 ```
-/rag/ask
+GET /ready
 ```
 
-### Request
+---
+
+## Liveness
+
+```
+GET /live
+```
+
+---
+
+## Ask Healthcare Question
+
+```
+POST /rag/ask
+```
+
+### Sample Request
 
 ```json
 {
-  "question": "What is the recommended treatment for hypertension?"
+  "question": "What is the first-line treatment for hypertension?",
+  "top_k": 5,
+  "document_types": [
+    "guideline"
+  ],
+  "departments": [
+    "cardiology"
+  ],
+  "include_sources": true,
+  "conversation_history": []
 }
 ```
 
 ---
 
-### Response
+### Sample Response
 
 ```json
 {
-  "answer": "The recommended treatment includes...",
+  "success": true,
+  "question": "What is the first-line treatment for hypertension?",
+  "answer": "ACE inhibitors, ARBs, calcium channel blockers, or thiazide diuretics are recommended as first-line therapy depending on patient characteristics.",
+  "validation": {
+    "is_valid": true,
+    "confidence_score": 0.97,
+    "validation_notes": "Validated using hypertension guideline."
+  },
+  "retrieval_metadata": {
+    "retrieved_documents": 5,
+    "top_k": 5,
+    "retrieval_time_seconds": 0.42
+  },
   "sources": [
-    "hypertension_guideline.pdf"
-  ]
+    {
+      "document": "hypertension_guideline.pdf",
+      "page": 12
+    }
+  ],
+  "execution_time_seconds": 2.4,
+  "message": "Success"
 }
 ```
 
@@ -341,59 +382,41 @@ streamlit run app.py
 GET /rag/health
 ```
 
----
+Returns
 
-## Application Status
-
-```
-GET /
-```
+- Agent status
+- Vector database status
+- Application status
 
 ---
 
-## Readiness Probe
+## Collection Statistics
 
 ```
-GET /ready
+GET /rag/stats
 ```
+
+Returns
+
+- Indexed documents
+- Collections
+- Vector counts
 
 ---
 
-## Liveness Probe
+## Reset Knowledge Base
 
 ```
-GET /live
+POST /rag/reset
 ```
 
----
-
-# Multi-Agent Workflow
-
-```
-User Question
-      │
-      ▼
-Retriever Agent
-      │
-Retrieve Relevant Chunks
-      │
-      ▼
-Validation Agent
-      │
-Context Verification
-      │
-      ▼
-LLM Response Generation
-      │
-      ▼
-Final Healthcare Answer
-```
+Rebuilds or resets the vector store.
 
 ---
 
 # Logging
 
-The application automatically creates log files.
+Loguru generates
 
 ```
 logs/
@@ -403,64 +426,118 @@ healthcare_rag.log
 healthcare_rag_error.log
 ```
 
----
+Features
 
-# Vector Database
-
-The application stores embeddings using ChromaDB.
-
-```
-chroma_db/
-```
-
-Documents are indexed for semantic retrieval.
+- Console logging
+- File logging
+- Error logging
+- Rotation
+- Compression
+- Retention
 
 ---
 
-# Security Recommendations
+# MLflow Tracking
 
-- Store API keys in environment variables.
-- Restrict CORS in production.
-- Secure APIs using OAuth2 or JWT.
-- Encrypt sensitive healthcare data.
-- Implement role-based access control (RBAC).
+Every RAG request is tracked.
+
+Logged Information
+
+- Question
+- Retrieved documents
+- Generated response
+- Endpoint
+- Source
+- Execution metadata
+
+Start MLflow
+
+```bash
+mlflow server \
+--backend-store-uri sqlite:///mlflow.db \
+--default-artifact-root ./mlruns \
+--host 0.0.0.0 \
+--port 5000
+```
+
+Open
+
+```
+http://localhost:5000
+```
+
+---
+
+# RAG Workflow
+
+```
+User Question
+      │
+      ▼
+Embedding Generation
+      │
+      ▼
+ChromaDB Similarity Search
+      │
+      ▼
+Retrieve Top-K Documents
+      │
+      ▼
+Retrieval Agent
+      │
+      ▼
+Medical Knowledge Agent
+      │
+      ▼
+Validation Agent
+      │
+      ▼
+Evidence-Based Response
+      │
+      ▼
+Return Sources + Confidence Score
+```
+
+---
+
+# Advantages
+
+- Minimizes hallucinations
+- Uses trusted healthcare documents
+- Explainable AI responses
+- Source citations
+- Multi-agent reasoning
+- Scalable architecture
+- Modular codebase
+- Production-ready logging
+- Experiment tracking
 
 ---
 
 # Future Enhancements
 
 - Hybrid Search (BM25 + Vector Search)
-- Multiple LLM Support
-- LangGraph Integration
-- Azure OpenAI Support
-- Medical Citation Generation
-- Clinical Decision Support
-- Conversation Memory
-- Feedback-based Learning
-- Document Upload Portal
-- Multi-language Support
-
----
-
-# Performance Optimization
-
-- Embedding Cache
-- Async FastAPI APIs
-- Batch Vector Search
-- Incremental Document Indexing
-- Response Streaming
-- GPU Embedding Support
-
----
-
-# License
-
-This project is intended for educational and enterprise healthcare AI development purposes.
+- Reranking Models
+- FHIR Integration
+- HL7 Support
+- Patient-specific Retrieval
+- Role-Based Access Control (RBAC)
+- Streaming Responses
+- OCR for scanned PDFs
+- Multilingual Support
+- Knowledge Base Versioning
 
 ---
 
 # Author
 
-Healthcare RAG Copilot
+Enterprise Healthcare AI Solution
 
-Enterprise AI Solution for Clinical Knowledge Retrieval using FastAPI, AutoGen, ChromaDB, and React TypeScript.
+Built using
+
+- FastAPI
+- AutoGen 0.7.5
+- ChromaDB
+- MLflow
+- Loguru
+- Retrieval-Augmented Generation (RAG)

@@ -13,3 +13,4 @@ mlflow
 chromadb
 sentence-transformers
 pypdf
+langsmith
